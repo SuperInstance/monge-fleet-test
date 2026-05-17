@@ -1,0 +1,132 @@
+{
+  "experiment_1": {
+    "converging": {
+      "stability": 1.0,
+      "all_same": true,
+      "type_stability": 1,
+      "type_by_phase": [
+        [
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus"
+        ],
+        [
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus"
+        ],
+        [
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus"
+        ],
+        [
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus"
+        ]
+      ]
+    },
+    "oscillating": {
+      "stability": 0.25,
+      "all_same": false,
+      "type_stability": 4,
+      "type_by_phase": [
+        [
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus",
+          "consensus"
+        ],
+        [
+          "fleet",
+          "fleet",
+          "fleet",
+          "fleet",
+          "fleet"
+        ],
+        [
+          "agent",
+          "agent",
+          "agent",
+          "agent",
+          "agent"
+        ],
+        [
+          "room",
+          "room",
+          "room",
+          "room",
+          "room"
+        ]
+      ]
+    }
+  },
+  "experiment_2": {
+    "agents": [
+      {
+        "agent": "Agent-Consensus",
+        "target": "consensus",
+        "phase": 0,
+        "hits": 10,
+        "total": 10,
+        "hit_rate": 1.0
+      },
+      {
+        "agent": "Agent-Fleet",
+        "target": "fleet",
+        "phase": 1.57,
+        "hits": 10,
+        "total": 10,
+        "hit_rate": 1.0
+      },
+      {
+        "agent": "Agent-Agent",
+        "target": "agent",
+        "phase": 3.14,
+        "hits": 10,
+        "total": 10,
+        "hit_rate": 1.0
+      },
+      {
+        "agent": "Agent-Room",
+        "target": "room",
+        "phase": 4.71,
+        "hits": 10,
+        "total": 10,
+        "hit_rate": 1.0
+      }
+    ],
+    "avg_hit_rate": 1.0,
+    "phase_diversity": 1.0,
+    "phase_diverse_hits": 4
+  },
+  "experiment_3": {
+    "converging": {
+      "avg_novelty": 1.0,
+      "entropy": 0.0,
+      "unique_types": 1
+    },
+    "oscillating": {
+      "avg_novelty": 1.0,
+      "entropy": 1.1211,
+      "unique_types": 3
+    },
+    "novelty_ratio": null
+  },
+  "plato_test": {
+    "plato_available": true,
+    "tiles_loaded": 0,
+    "heartbeats": 5,
+    "reflections_submitted": 1
+  }
+}
