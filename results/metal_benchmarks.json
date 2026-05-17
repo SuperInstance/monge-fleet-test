@@ -1,0 +1,21 @@
+{
+  "python": {
+    "error": "Killed\n"
+  },
+  "nodejs": {
+    "ops": 50000,
+    "deposit_time": 0.011,
+    "deposit_per_sec": 4545454.545454546,
+    "follow_time": 12.142,
+    "follow_per_sec": 4117.93773678142,
+    "evaporate_time": 0.096,
+    "evaporate_per_sec": 5208333.333333333,
+    "trail_size": 51000
+  },
+  "go": {
+    "error": "parse: ''"
+  },
+  "rust": {
+    "error": "cargo build failed: "
+  }
+}

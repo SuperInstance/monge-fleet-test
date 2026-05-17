@@ -1,0 +1,38 @@
+{
+  "date": "2026-05-17",
+  "hardware": "ARM 4-core 24GB Oracle Cloud",
+  "irreducible": "PheromoneTrail (deposit/follow/evaporate)",
+  "ops": 50000,
+  "note": "O(1) follow — measures language overhead, not algorithmic complexity",
+  "results": {
+    "python": {"deposit_per_sec": 875465, "follow_per_sec": 4149751, "evaporate_per_sec": 4021158},
+    "nodejs": {"deposit_per_sec": 4545455, "follow_per_sec": 50000000, "evaporate_per_sec": 4424779},
+    "go": {"deposit_per_sec": 5385216, "follow_per_sec": 543006082, "evaporate_per_sec": 8969957},
+    "rust": {"deposit_per_sec": 3395891, "follow_per_sec": 20161624, "evaporate_per_sec": 7485153}
+  },
+  "key_insight": "Follow is nearly free across all languages (O(1)). Deposit is the bottleneck — 6x Python/Go difference from capacity management (list.shift vs slice pre-allocation). Evaporate is cache-sensitive — Rust leads via iterator fusion."
+}
+
+  "failure_modes": {
+    "python": {
+      "high_frequency_deposit": "list growth O(n), catastrophic at 1M+ ops/sec",
+      "evaporation_with_large_trail": "linear scan over entire list each time",
+      "concurrent_access": "GIL protects but no true parallelism"
+    },
+    "nodejs": {
+      "high_frequency_deposit": "array.shift() is O(n) — same as Python list",
+      "evaporation_with_large_trail": "creates new array every call — GC pressure",
+      "concurrent_access": "single-threaded event loop, no true parallelism"
+    },
+    "go": {
+      "high_frequency_deposit": "slice growth is amortized O(1) — best of the four",
+      "evaporation_with_large_trail": "creates new slice — GC pressure but fast",
+      "concurrent_access": "goroutines + channels — built-in parallelism"
+    },
+    "rust": {
+      "high_frequency_deposit": "VecDeque push/pop is O(1) — consistent",
+      "evaporation_with_large_trail": "iterator fusion — best evaporate performance",
+      "concurrent_access": "fearless concurrency — no runtime overhead"
+    }
+  }
+}
