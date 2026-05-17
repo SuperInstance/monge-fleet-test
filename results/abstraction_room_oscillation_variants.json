@@ -1,0 +1,6 @@
+{
+  "converging_overlap": 5,
+  "converging_stability": 1.0,
+  "pure_oscillating_overlap": 5,
+  "pure_oscillating_stability": 1.0
+}
