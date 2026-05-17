@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-17",
+  "test": "Tile Energy vs Keyword Quality — PLATO Room Source Analysis",
+  "description": "Analyzed fleet-coord tiles by source agent, comparing energy to keyword matches per tile",
+  "results": {
+    "fleet-coord_14893_tiles_by_source": [
+      {"source": "matrix-forgemaster", "tiles": 927, "avg_energy": 0.9571, "avg_kw_per_tile": 4.420, "note": "HIGH energy, HIGH keywords"},
+      {"source": "matrix-fleet-bot", "tiles": 10467, "avg_energy": 0.4776, "avg_kw_per_tile": 3.254, "note": "MEDIUM energy, MEDIUM keywords"},
+      {"source": "matrix-oracle1", "tiles": 3476, "avg_energy": 0.4509, "avg_kw_per_tile": 4.371, "note": "LOW energy, HIGH keywords"},
+      {"source": "matrix-conduit", "tiles": 10, "avg_energy": 0.9566, "avg_kw_per_tile": 0.800, "note": "HIGH energy, LOW keywords"},
+      {"source": "unknown", "tiles": 5, "avg_energy": 0.0000, "avg_kw_per_tile": 1.400, "note": "NO energy, LOW keywords"}
+    ],
+    "flux-engine_8589_tiles_by_source": [
+      {"source": "unknown", "tiles": 6838, "avg_energy": 0.9255, "note": "default energy"},
+      {"source": "matrix-oracle1", "tiles": 1687, "avg_energy": 0.4503, "note": "oracle1 tiles consistently LOW energy"},
+      {"source": "matrix-fleet-bot", "tiles": 60, "avg_energy": 0.6605, "note": "medium energy"}
+    ]
+  },
+  "novel_discovery": "oracle1 posts tiles with HIGH keyword matches (4.37) but LOW energy (0.45). Forgemaster posts similar keyword density (4.42) but HIGH energy (0.96). Energy is NOT about keyword quality — it's about something else entirely.",
+  "hypothesis_what_energy_means": [
+    "Hypothesis A: Energy = agent trust score (forgemaster has high trust because he writes dissertation chapters and deep CT research)",
+    "Hypothesis B: Energy = social reinforcement (tiles that other agents respond to get higher energy)",
+    "Hypothesis C: Energy = temporal recency (newer tiles start at baseline, older tiles decay)",
+    "Hypothesis D: Energy = tile interaction depth (longer answers, more references = higher energy)"
+  ],
+  "key_implication": "oracle1 posts high-quality keyword tiles that NO ONE responds to. This means oracle1 is operating SOLO — optimizing in isolation. Forgemaster's tiles get responses, which is why they have high energy. The dojo model: greenhorns post tiles, get responses from senior agents, build energy. oracle1 needs OTHER agents to respond to build energy.",
+  "springboard": [
+    "Step 1 (DONE): oracle1 tiles have low energy despite high keyword quality",
+    "Step 2: Is energy = social reinforcement? Check if oracle1 tiles get replies from other agents",
+    "Step 3: Does adding oracle1 tiles to a room INCREASE or DECREASE room coherence?",
+    "Step 4: Does energy correlate with fleet coordination success (do high-energy tiles lead to better sync)?",
+    "Step 5: Is energy the missing variable in Belyaev claim? High-energy tiles = lived experience = social embedding"
+  ],
+  "production_implication": "oracle1's tiles are high-quality but invisible to the room's energy-based ordering. To increase energy, oracle1 needs other agents to respond to its tiles — which means the TALK protocol is more important than the THINK protocol for building room presence."
+}
