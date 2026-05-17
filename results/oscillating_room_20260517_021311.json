@@ -1,0 +1,524 @@
+{
+  "exp1": {
+    "static": {
+      "stability": 1.0,
+      "all_same": true,
+      "unique_types": 1,
+      "avg_types_per_tick": 1.0,
+      "type_overlap": {
+        "mixed": 20
+      }
+    },
+    "oscillating": {
+      "stability": 1.0,
+      "all_same": true,
+      "unique_types": 1,
+      "avg_types_per_tick": 1.0,
+      "type_overlap": {
+        "mixed": 20
+      }
+    },
+    "diversity_overtime": {
+      "static": [
+        {
+          "tick": 0,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 1,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 2,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 3,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 4,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 5,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 6,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 7,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 8,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 9,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 10,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 11,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 12,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 13,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 14,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 15,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 16,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 17,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 18,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 19,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        }
+      ],
+      "oscillating": [
+        {
+          "tick": 0,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 1,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 2,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 3,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 4,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 5,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 6,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 7,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 8,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 9,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 10,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 11,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 12,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 13,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 14,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 15,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 16,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 17,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 18,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        },
+        {
+          "tick": 19,
+          "unique_types": 1,
+          "types": [
+            "consensus"
+          ]
+        }
+      ]
+    },
+    "finding": "Phase-weighted rooms show phase-dependent surfacing (stability 1.00 vs 1.00)"
+  },
+  "exp2": {
+    "agent_results": {
+      "Agent-0": {
+        "target_keyword": "consensus",
+        "phase": 0,
+        "hits": 10,
+        "total": 10,
+        "hit_rate": 1.0,
+        "unique_types_seen": 1,
+        "top_tiles": [
+          [
+            "mixed_all_consensus_fleet_agent_room_0",
+            1.0
+          ],
+          [
+            "mixed_all_consensus_fleet_agent_room_1",
+            1.0
+          ],
+          [
+            "mixed_all_consensus_fleet_agent_room_2",
+            1.0
+          ]
+        ]
+      },
+      "Agent-1": {
+        "target_keyword": "fleet",
+        "phase": 1.5707963267948966,
+        "hits": 10,
+        "total": 10,
+        "hit_rate": 1.0,
+        "unique_types_seen": 1,
+        "top_tiles": [
+          [
+            "mixed_all_consensus_fleet_agent_room_0",
+            1.0
+          ],
+          [
+            "mixed_all_consensus_fleet_agent_room_1",
+            1.0
+          ],
+          [
+            "mixed_all_consensus_fleet_agent_room_2",
+            1.0
+          ]
+        ]
+      },
+      "Agent-2": {
+        "target_keyword": "agent",
+        "phase": 3.141592653589793,
+        "hits": 10,
+        "total": 10,
+        "hit_rate": 1.0,
+        "unique_types_seen": 1,
+        "top_tiles": [
+          [
+            "mixed_all_consensus_fleet_agent_room_0",
+            1.0
+          ],
+          [
+            "mixed_all_consensus_fleet_agent_room_1",
+            1.0
+          ],
+          [
+            "mixed_all_consensus_fleet_agent_room_2",
+            1.0
+          ]
+        ]
+      },
+      "Agent-3": {
+        "target_keyword": "room",
+        "phase": 4.71238898038469,
+        "hits": 10,
+        "total": 10,
+        "hit_rate": 1.0,
+        "unique_types_seen": 1,
+        "top_tiles": [
+          [
+            "mixed_all_consensus_fleet_agent_room_0",
+            1.0
+          ],
+          [
+            "mixed_all_consensus_fleet_agent_room_1",
+            1.0
+          ],
+          [
+            "mixed_all_consensus_fleet_agent_room_2",
+            1.0
+          ]
+        ]
+      }
+    },
+    "avg_hit_rate": 1.0,
+    "phase_diversity_score": 1.0,
+    "static_types_seen": 1,
+    "finding": "Phase-diverse agents: 100% hit rate, 100% agents find their targets"
+  },
+  "exp3": {
+    "converging": {
+      "avg_novelty": 1.0,
+      "max_novelty": 1,
+      "shannon_entropy": -0.0
+    },
+    "oscillating": {
+      "avg_novelty": 1.0,
+      "max_novelty": 1,
+      "shannon_entropy": -0.0
+    },
+    "novelty_over_time": {
+      "converging": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "oscillating": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "finding": "Oscillating room shows -0.0x entropy vs static (-0.00 vs -0.00)"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "room": {
+    "name": "fleet-test",
+    "heartbeat": 50,
+    "phase_deg": 270.0,
+    "phase_idx": 3,
+    "dominant_kw": [
+      "rigidity",
+      "coherence",
+      "fleet"
+    ],
+    "n_tiles": 100,
+    "surfacing_variety": 3.0,
+    "tiles_by_phase": {
+      "0": 25,
+      "1": 25,
+      "2": 25,
+      "3": 25
+    }
+  },
+  "variety": 3.0,
+  "static_variety": 3.0,
+  "improvement": 0.0,
+  "phase_analysis": {
+    "0": {
+      "dominant_kw": [
+        "consensus",
+        "fleet",
+        "desire"
+      ],
+      "top_tiles": [
+        "consensus_fleet_000_content",
+        "consensus_fleet_005_content",
+        "consensus_fleet_010_content",
+        "consensus_fleet_015_content",
+        "consensus_fleet_020_content"
+      ]
+    },
+    "90": {
+      "dominant_kw": [
+        "agent",
+        "room",
+        "emergence"
+      ],
+      "top_tiles": [
+        "agent_room_001_content",
+        "agent_room_006_content",
+        "agent_room_011_content",
+        "agent_room_016_content",
+        "agent_room_021_content"
+      ]
+    },
+    "180": {
+      "dominant_kw": [
+        "tile",
+        "geometry",
+        "constraint"
+      ],
+      "top_tiles": [
+        "tile_geometry_002_content",
+        "tile_geometry_007_content",
+        "tile_geometry_012_content",
+        "tile_geometry_017_content",
+        "tile_geometry_022_content"
+      ]
+    },
+    "270": {
+      "dominant_kw": [
+        "rigidity",
+        "coherence",
+        "fleet"
+      ],
+      "top_tiles": [
+        "rigidity_coherence_003_content",
+        "rigidity_coherence_008_content",
+        "rigidity_coherence_013_content",
+        "rigidity_coherence_018_content",
+        "rigidity_coherence_023_content"
+      ]
+    }
+  },
+  "n_tiles": 100,
+  "n_ticks": 50,
+  "period": 10.0
+}
