@@ -4,32 +4,32 @@
     "stability": 1.0,
     "top_by_phase": [
       [
-        "consensus_fleet_4",
+        "consensus_fleet_2",
+        "consensus_fleet_0",
         "consensus_fleet_3",
         "consensus_fleet_1",
-        "consensus_fleet_0",
-        "consensus_fleet_2"
+        "consensus_fleet_4"
       ],
       [
-        "consensus_fleet_4",
+        "consensus_fleet_2",
+        "consensus_fleet_0",
         "consensus_fleet_3",
         "consensus_fleet_1",
-        "consensus_fleet_0",
-        "consensus_fleet_2"
+        "consensus_fleet_4"
       ],
       [
-        "consensus_fleet_4",
+        "consensus_fleet_2",
+        "consensus_fleet_0",
         "consensus_fleet_3",
         "consensus_fleet_1",
-        "consensus_fleet_0",
-        "consensus_fleet_2"
+        "consensus_fleet_4"
       ],
       [
-        "consensus_fleet_4",
+        "consensus_fleet_2",
+        "consensus_fleet_0",
         "consensus_fleet_3",
         "consensus_fleet_1",
-        "consensus_fleet_0",
-        "consensus_fleet_2"
+        "consensus_fleet_4"
       ]
     ],
     "phases": [
@@ -44,32 +44,32 @@
     "stability": 0.5,
     "top_by_phase": [
       [
-        "consensus_fleet_4",
+        "consensus_fleet_2",
+        "consensus_fleet_0",
         "consensus_fleet_3",
         "consensus_fleet_1",
-        "consensus_fleet_0",
-        "consensus_fleet_2"
+        "consensus_fleet_4"
       ],
       [
-        "consensus_fleet_4",
+        "consensus_fleet_2",
+        "consensus_fleet_0",
         "consensus_fleet_3",
         "consensus_fleet_1",
-        "consensus_fleet_0",
-        "consensus_fleet_2"
+        "consensus_fleet_4"
       ],
       [
-        "agent_room_2",
-        "agent_room_1",
-        "agent_room_4",
         "agent_room_0",
-        "agent_room_3"
+        "agent_room_2",
+        "agent_room_3",
+        "agent_room_1",
+        "agent_room_4"
       ],
       [
-        "agent_room_2",
-        "agent_room_1",
-        "agent_room_4",
         "agent_room_0",
-        "agent_room_3"
+        "agent_room_2",
+        "agent_room_3",
+        "agent_room_1",
+        "agent_room_4"
       ]
     ],
     "phases": [

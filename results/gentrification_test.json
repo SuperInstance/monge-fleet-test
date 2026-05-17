@@ -1,0 +1,35 @@
+{
+  "rooms": [
+    {
+      "room": "fleet-coord",
+      "n_tiles": 15237,
+      "early_H": 1.7757135628639817,
+      "late_H": 1.7303373645847304,
+      "delta_H": -0.04537619827925132
+    },
+    {
+      "room": "flux-engine",
+      "n_tiles": 8591,
+      "early_H": 2.321928094887362,
+      "late_H": 2.643857247158462,
+      "delta_H": 0.32192915227109964
+    },
+    {
+      "room": "oracle1-forgemaster-bridge",
+      "n_tiles": 2185,
+      "early_H": 1.785308071490758,
+      "late_H": 1.7728895757366068,
+      "delta_H": -0.012418495754151326
+    },
+    {
+      "room": "agent-oracle1",
+      "n_tiles": 2721,
+      "early_H": 2.474297473623418,
+      "late_H": 2.511138703036941,
+      "delta_H": 0.03684122941352319
+    }
+  ],
+  "gentrified_count": 0,
+  "diversified_count": 1,
+  "stable_count": 3
+}

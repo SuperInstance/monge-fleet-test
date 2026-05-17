@@ -1,0 +1,28 @@
+{
+  "rooms": [
+    {
+      "room": "fleet-coord",
+      "n_tiles": 15237,
+      "gamma": 0.7360912833891139,
+      "H": 1.72911757816612,
+      "gamma_plus_H": 2.465208861555234
+    },
+    {
+      "room": "flux-engine",
+      "n_tiles": 8591,
+      "gamma": 0.8834268513560731,
+      "H": 2.643857247158462,
+      "gamma_plus_H": 3.527284098514535
+    },
+    {
+      "room": "oracle1-forgemaster-bridge",
+      "n_tiles": 2185,
+      "gamma": 0.9630238530892491,
+      "H": 1.7549536523813825,
+      "gamma_plus_H": 2.7179775054706314
+    }
+  ],
+  "mean_gamma_H": 2.9034901551801333,
+  "std_dev": 0.45299901371652695,
+  "finding": "not_confirmed"
+}
