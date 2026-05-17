@@ -1,0 +1,264 @@
+{
+  "predict": {
+    "strategy": "predict",
+    "n_agents": 5,
+    "n_ticks": 50,
+    "n_tiles": 250,
+    "keyword_counts": {
+      "consensus": 125,
+      "fleet": 75,
+      "agent": 100,
+      "room": 50,
+      "tile": 75,
+      "geometry": 75
+    },
+    "phase_tile_sets": {
+      "0": [
+        "consensus_fleet_87",
+        "consensus_fleet_81",
+        "consensus_fleet_93",
+        "consensus_fleet_27",
+        "consensus_fleet_67",
+        "consensus_fleet_61",
+        "consensus_fleet_45",
+        "consensus_fleet_78",
+        "consensus_fleet_25",
+        "consensus_fleet_71"
+      ],
+      "90": [
+        "consensus_fleet_87",
+        "consensus_fleet_81",
+        "consensus_fleet_93",
+        "consensus_fleet_27",
+        "consensus_fleet_67",
+        "consensus_fleet_61",
+        "consensus_fleet_45",
+        "consensus_fleet_78",
+        "consensus_fleet_25",
+        "consensus_fleet_71"
+      ],
+      "180": [
+        "agent_room_13",
+        "agent_room_1",
+        "agent_room_12",
+        "agent_room_85",
+        "agent_room_45",
+        "agent_room_25",
+        "agent_room_42",
+        "agent_room_78",
+        "agent_room_98",
+        "agent_room_11"
+      ],
+      "270": [
+        "agent_room_13",
+        "agent_room_1",
+        "agent_room_12",
+        "agent_room_85",
+        "agent_room_45",
+        "agent_room_25",
+        "agent_room_42",
+        "agent_room_78",
+        "agent_room_98",
+        "agent_room_11"
+      ]
+    },
+    "variety_score": 2.0,
+    "tick_log": [
+      {
+        "tick": 0,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_87",
+          "consensus_fleet_71",
+          "consensus_fleet_27",
+          "consensus_fleet_78",
+          "consensus_fleet_67"
+        ]
+      },
+      {
+        "tick": 10,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_87",
+          "consensus_fleet_71",
+          "consensus_fleet_27",
+          "consensus_fleet_78",
+          "consensus_fleet_67"
+        ]
+      },
+      {
+        "tick": 20,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_87",
+          "consensus_fleet_71",
+          "consensus_fleet_27",
+          "consensus_fleet_78",
+          "consensus_fleet_67"
+        ]
+      },
+      {
+        "tick": 30,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_87",
+          "consensus_fleet_71",
+          "consensus_fleet_27",
+          "consensus_fleet_78",
+          "consensus_fleet_67"
+        ]
+      },
+      {
+        "tick": 40,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_87",
+          "consensus_fleet_71",
+          "consensus_fleet_27",
+          "consensus_fleet_78",
+          "consensus_fleet_67"
+        ]
+      }
+    ]
+  },
+  "static": {
+    "strategy": "static",
+    "n_agents": 5,
+    "n_ticks": 50,
+    "n_tiles": 250,
+    "keyword_counts": {
+      "consensus": 125,
+      "fleet": 75,
+      "agent": 100,
+      "room": 50,
+      "tile": 75,
+      "geometry": 75
+    },
+    "phase_tile_sets": {
+      "0": [
+        "consensus_fleet_81",
+        "consensus_fleet_17",
+        "consensus_fleet_89",
+        "consensus_fleet_45",
+        "consensus_fleet_52",
+        "consensus_fleet_23",
+        "consensus_fleet_85",
+        "consensus_fleet_2",
+        "consensus_fleet_97",
+        "consensus_fleet_7"
+      ],
+      "90": [
+        "consensus_fleet_81",
+        "consensus_fleet_17",
+        "consensus_fleet_89",
+        "consensus_fleet_45",
+        "consensus_fleet_52",
+        "consensus_fleet_23",
+        "consensus_fleet_85",
+        "consensus_fleet_2",
+        "consensus_fleet_97",
+        "consensus_fleet_7"
+      ],
+      "180": [
+        "agent_room_71",
+        "agent_room_10",
+        "agent_room_94",
+        "agent_room_91",
+        "agent_room_2",
+        "agent_room_21",
+        "agent_room_88",
+        "agent_room_69"
+      ],
+      "270": [
+        "agent_room_71",
+        "agent_room_10",
+        "agent_room_94",
+        "agent_room_91",
+        "agent_room_2",
+        "agent_room_21",
+        "agent_room_88",
+        "agent_room_69"
+      ]
+    },
+    "variety_score": 1.8,
+    "tick_log": [
+      {
+        "tick": 0,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_81",
+          "consensus_fleet_2",
+          "consensus_fleet_7",
+          "consensus_fleet_23",
+          "consensus_fleet_17"
+        ]
+      },
+      {
+        "tick": 10,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_81",
+          "consensus_fleet_2",
+          "consensus_fleet_7",
+          "consensus_fleet_23",
+          "consensus_fleet_17"
+        ]
+      },
+      {
+        "tick": 20,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_81",
+          "consensus_fleet_2",
+          "consensus_fleet_7",
+          "consensus_fleet_23",
+          "consensus_fleet_17"
+        ]
+      },
+      {
+        "tick": 30,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_81",
+          "consensus_fleet_2",
+          "consensus_fleet_7",
+          "consensus_fleet_23",
+          "consensus_fleet_17"
+        ]
+      },
+      {
+        "tick": 40,
+        "phase_deg": 36.0,
+        "phase_idx": 0,
+        "dominant_kw": "consensus_fleet",
+        "top_tiles": [
+          "consensus_fleet_81",
+          "consensus_fleet_2",
+          "consensus_fleet_7",
+          "consensus_fleet_23",
+          "consensus_fleet_17"
+        ]
+      }
+    ]
+  },
+  "improvement": 0.19999999999999996,
+  "finding": "predict_better"
+}
