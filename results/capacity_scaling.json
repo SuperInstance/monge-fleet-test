@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-17",
+  "test": "Capacity Scaling — deposit ops/sec as capacity grows",
+  "ops": 50000,
+  "note": "50K ops never exceeds 100K capacity — pop(0)/shift never called at 100K. At 1K/10K, trimming happens frequently.",
+  "results": {
+    "python": {
+      "1000": {"per_sec": 1131902, "time": 0.0442},
+      "10000": {"per_sec": 247446, "time": 0.2021},
+      "100000": {"per_sec": 1082717, "time": 0.0462}
+    },
+    "nodejs": {
+      "1000": {"per_sec": 2631579, "time": 0.0190},
+      "10000": {"per_sec": 3333333, "time": 0.0150},
+      "100000": {"per_sec": 4166667, "time": 0.0120}
+    },
+    "go": {
+      "1000": {"per_sec": 390338, "time": 0.1281},
+      "10000": {"per_sec": 113632, "time": 0.4400},
+      "100000": {"per_sec": 5405642, "time": 0.0092}
+    },
+    "rust": {
+      "1000": {"per_sec": 25735534, "time": 0.0019},
+      "10000": {"per_sec": 20063247, "time": 0.0025},
+      "100000": {"per_sec": 13579432, "time": 0.0037}
+    }
+  },
+  "key_finding": "At 100K capacity with 50K ops: NO trimming triggered = no pop(0)/shift cost. Languages show different behaviors because the trimming frequency varies. Rust VecDeque is the only O(1) structure that maintains performance as capacity grows.",
+  "interpretation": {
+    "python_10K_slowness": "list.pop(0) O(n) shifting happens ~40K times at 10K capacity = ~20K element shifts per operation",
+    "go_1K_slowness": "slice[1:] creates new backing array copy each trim, constant at small capacity",
+    "go_100K_fast": "No trimming at 100K — slice grows from 0 to 50K, no copy needed",
+    "rust_consistency": "VecDeque ring buffer handles all cases without performance cliff"
+  },
+  "degradation_summary": {
+    "Python": "4.6x drop at 10K (O(n) list.pop(0))",
+    "Node.js": "0.6x (improves with capacity — V8 optimization)",
+    "Go": "0.1x at 10K, recovers at 100K (copy-on-trim vs grow-geometric)",
+    "Rust": "1.9x (most consistent, slight ring buffer overhead growth)"
+  }
+}

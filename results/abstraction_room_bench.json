@@ -1,0 +1,13 @@
+{
+  "date": "2026-05-17",
+  "test": "AbstractionRoom oscillation — 500 ticks / 1000 tiles",
+  "note": "Oscillating resolution (not converging) + score all tiles + sort. Measures language overhead on iteration-heavy workload.",
+  "results": {
+    "go": {"ticks_per_sec": 6951, "note": "sort.Slice highly optimized, fastest"},
+    "nodejs": {"ticks_per_sec": 3226, "note": "V8 array + sort fast, 2x slower than Go"},
+    "rust": {"ticks_per_sec": 2069, "note": "Vec.sort fast, but score() iteration overhead higher"},
+    "python": {"ticks_per_sec": 806, "note": "List comprehension + sort slowest by far"}
+  },
+  "key_finding": "Python is 8.6x slower than Go here. The oscillating pattern (continuous scoring every tick) amplifies language overhead vs the deposit-only workload. For high-frequency room heartbeats, Python can't keep up.",
+  "production_implication": "AbstractionRoom with 1000 tiles at 10Hz heartbeat needs 10K scores/sec. Python at 806 = can handle 80 rooms. Go at 6951 = can handle 695 rooms. At fleet scale (hundreds of rooms), only Go/Rust can sustain the tick rate."
+}

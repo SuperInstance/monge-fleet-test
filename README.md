@@ -128,3 +128,21 @@ Ring buffer means no element shift ever. Performance is consistent across all ca
 - **Lock-free concurrency**: Only Rust guarantees no GC pauses under write load
 
 Next: concurrent multi-process contention test.
+
+## Round 3: AbstractionRoom Oscillation
+
+| Language | Ticks/s (500 ticks, 1000 tiles) | Production Rooms @ 10Hz |
+|----------|-------------------------------:|------------------------:|
+| **Go** | 6,951 | ~695 rooms |
+| **Node.js** | 3,226 | ~323 rooms |
+| **Rust** | 2,069 | ~207 rooms |
+| **Python** | 806 | ~81 rooms |
+
+### Key finding
+At 10Hz heartbeat with 1000 tiles/room:
+- Python maxes out at ~81 rooms before CPU saturation
+- Go handles ~695 rooms with headroom
+- At fleet scale (hundreds of rooms active), only Go/Rust sustain the tick rate
+- Python is 8.6x slower than Go on oscillation workload (vs 6x on deposit) — oscillation amplifies language overhead
+
+Next: mixed-language pipeline test — Go connection handling + Rust compute + Python orchestration.

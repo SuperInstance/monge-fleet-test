@@ -1,14 +1,11 @@
 # Compiled binaries
-pheromone_rust
-pheromone_go
-pgobench
-prustbench
-bench_rust
-bench_go
-bench_py
+*.bin
+*.o
 
-# Rust build artifacts
+# Build artifacts (not results data)
 rust_bench/
+rs_cs/
+rs_ab/
 
-# All results data (keep structure)
-results/
+# Compiled language binaries
+pheromone_rust pheromone_go pgobench prustbench bench_go bench_rust csbenchgo
