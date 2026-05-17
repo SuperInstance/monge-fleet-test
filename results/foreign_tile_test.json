@@ -1,0 +1,37 @@
+{
+  "signatures": {
+    "fleet-coord": [
+      "fleet",
+      "room",
+      "tile",
+      "forge"
+    ],
+    "flux-engine": [
+      "tile",
+      "flux",
+      "forge",
+      "constraint",
+      "rigidity"
+    ],
+    "oracle1-forgemaster-bridge": [
+      "fleet",
+      "room",
+      "tile",
+      "forge",
+      "flux"
+    ],
+    "agent-oracle1": [
+      "tile",
+      "fleet",
+      "agent"
+    ]
+  },
+  "common_keywords": [
+    "fleet",
+    "flux",
+    "room",
+    "tile",
+    "forge"
+  ],
+  "n_common": 5
+}
