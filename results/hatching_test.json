@@ -1,0 +1,41 @@
+{
+  "quartile_metrics": [
+    {
+      "quartile": 1,
+      "size": 680,
+      "mean_energy": 0.9230124132352965,
+      "mean_entropy": 0.3534214246084786,
+      "energy_variance": 2.4305423651295423e-05,
+      "energy_std": 0.004930053108364597
+    },
+    {
+      "quartile": 2,
+      "size": 1360,
+      "mean_energy": 0.9320229948529433,
+      "mean_entropy": 0.329572463205586,
+      "energy_variance": 0.00010794095084776749,
+      "energy_std": 0.010389463453314974
+    },
+    {
+      "quartile": 3,
+      "size": 2040,
+      "mean_energy": 0.9412901058823536,
+      "mean_entropy": 0.3535776363210148,
+      "energy_variance": 0.0002535058788093771,
+      "energy_std": 0.015921867943472497
+    },
+    {
+      "quartile": 4,
+      "size": 2721,
+      "mean_energy": 0.9116479360529209,
+      "mean_entropy": 0.3042996163946897,
+      "energy_variance": 0.015362338748702981,
+      "energy_std": 0.12394490206822942
+    }
+  ],
+  "hatch_score": 0.6666666666666666,
+  "energy_delta": -0.011364477182375543,
+  "entropy_delta": -0.049121808213788865,
+  "criteria_passed": 2,
+  "criteria_total": 3
+}
