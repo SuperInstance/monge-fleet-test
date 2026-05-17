@@ -1,0 +1,176 @@
+{
+  "trail_self_assembly": [
+    {
+      "config": "100% explorer",
+      "dominance": 0.25084,
+      "dominant": "north"
+    },
+    {
+      "config": "80% exp / 20% follow",
+      "dominance": 0.48224137931042615,
+      "dominant": "east"
+    },
+    {
+      "config": "50% exp / 50% follow",
+      "dominance": 0.7333214285716018,
+      "dominant": "west"
+    },
+    {
+      "config": "50% exp / 30% follow / 20% amp",
+      "dominance": 0.7405972222223227,
+      "dominant": "east"
+    },
+    {
+      "config": "100% amplifier",
+      "dominance": 1.0,
+      "dominant": "south"
+    }
+  ],
+  "keyword_bootstrap": [
+    {
+      "config": "100% focused",
+      "ginis": [
+        0.2375,
+        0.2375,
+        0.2375
+      ],
+      "bootstrapped": true
+    },
+    {
+      "config": "80% focused + 20% random",
+      "ginis": [
+        0.218875,
+        0.2153,
+        0.212675
+      ],
+      "bootstrapped": true
+    },
+    {
+      "config": "50% focused + 50% random",
+      "ginis": [
+        0.2495,
+        0.24495,
+        0.236075
+      ],
+      "bootstrapped": true
+    },
+    {
+      "config": "100% random",
+      "ginis": [
+        0.03625,
+        0.01765,
+        0.01285
+      ],
+      "bootstrapped": false
+    },
+    {
+      "config": "50% imitator + 50% random",
+      "ginis": [
+        0.068,
+        0.04715,
+        0.0246125
+      ],
+      "bootstrapped": false
+    }
+  ],
+  "self_reinforcing": [
+    {
+      "cycle": 0,
+      "n": 80,
+      "avg_score": 0.29875,
+      "avg_reinforce": 0.0
+    },
+    {
+      "cycle": 1,
+      "n": 64,
+      "avg_score": 0.35,
+      "avg_reinforce": 0.25
+    },
+    {
+      "cycle": 2,
+      "n": 51,
+      "avg_score": 0.380859375,
+      "avg_reinforce": 0.5
+    },
+    {
+      "cycle": 3,
+      "n": 40,
+      "avg_score": 0.41421568627450983,
+      "avg_reinforce": 0.7058823529411765
+    },
+    {
+      "cycle": 4,
+      "n": 32,
+      "avg_score": 0.453125,
+      "avg_reinforce": 1.0
+    },
+    {
+      "cycle": 5,
+      "n": 25,
+      "avg_score": 0.47265625,
+      "avg_reinforce": 1.25
+    },
+    {
+      "cycle": 6,
+      "n": 20,
+      "avg_score": 0.5,
+      "avg_reinforce": 1.44
+    },
+    {
+      "cycle": 7,
+      "n": 16,
+      "avg_score": 0.525,
+      "avg_reinforce": 1.75
+    },
+    {
+      "cycle": 8,
+      "n": 12,
+      "avg_score": 0.53125,
+      "avg_reinforce": 2.0
+    },
+    {
+      "cycle": 9,
+      "n": 9,
+      "avg_score": 0.5416666666666666,
+      "avg_reinforce": 2.25
+    }
+  ],
+  "bootstrap_time": [
+    {
+      "config": "Focus only",
+      "ginis": [
+        0.3625,
+        0.3625,
+        0.3625
+      ],
+      "bootstrapped": true
+    },
+    {
+      "config": "Focus + Random 50%",
+      "ginis": [
+        0.293125,
+        0.2702,
+        0.275375
+      ],
+      "bootstrapped": true
+    },
+    {
+      "config": "Imitator + Random 50%",
+      "ginis": [
+        0.08175,
+        0.02925,
+        0.0394
+      ],
+      "bootstrapped": false
+    },
+    {
+      "config": "Random only",
+      "ginis": [
+        0.029,
+        0.02185,
+        0.01065
+      ],
+      "bootstrapped": false
+    }
+  ]
+}
