@@ -1,13 +1,14 @@
-# Build artifacts
+# Compiled binaries
 pheromone_rust
 pheromone_go
 pgobench
 prustbench
 bench_rust
 bench_go
-rust_bench/
-*.o
-*.bin
+bench_py
 
-# Results (keep these)
+# Rust build artifacts
+rust_bench/
+
+# All results data (keep structure)
 results/
