@@ -1,0 +1,13 @@
+# Build artifacts
+pheromone_rust
+pheromone_go
+pgobench
+prustbench
+bench_rust
+bench_go
+rust_bench/
+*.o
+*.bin
+
+# Results (keep these)
+results/
