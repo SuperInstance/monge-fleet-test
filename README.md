@@ -103,3 +103,28 @@ Places the fleet likely hits metal limits:
 - `pheromone_node.mjs` — Node.js implementation
 - `bench_py.py` / `bench_rust.rs` / `bench_go.go` / `bench_node.mjs` — benchmarks
 - `results/metal_benchmarks_round1.json` — raw data
+## Round 2: Capacity Scaling Results
+
+| Language | 1K cap | 10K cap | 100K cap | Key Finding |
+|----------|-------:|--------:|---------:|-------------|
+| **Rust** | 25.7M/s | 20.1M/s | 13.6M/s | Most consistent — ring buffer O(1) holds |
+| **Node.js** | 2.6M/s | 3.3M/s | 4.2M/s | Improves with capacity — V8 optimizes larger arrays |
+| **Python** | 1.1M/s | **247K/s** | 1.1M/s | **4.6x drop at 10K** — list.pop(0) O(n) is the killer |
+| **Go** | 390K/s | 114K/s | 5.4M/s | Trim-once pattern backfires at small cap, wins at large |
+
+### Why 10K is Python's worst case
+50K ops, capacity 10K: we grow to 10K quickly, then every subsequent deposit triggers `list.pop(0)` — 40K times. Each pop shifts ~5K elements. That's 200M element shifts total. At 100K capacity, we never trim at all.
+
+### Go's counter-intuitive behavior
+`trail = trail[1:]` creates a new backing array on every trim. At small capacity, this is frequent and slow. At 100K with 50K ops, no trim happens — the slice just grows. So Go is fast when you don't trim, slow when you do.
+
+### Rust VecDeque is the safest choice
+Ring buffer means no element shift ever. Performance is consistent across all capacities. Highest absolute performance at every capacity point.
+
+### Production implications
+- **Rooms with high tile counts + frequent writes**: Use Rust VecDeque — no O(n) cliff
+- **Rooms with mostly reads**: Python/Node.js acceptable, scale via caching
+- **High-throughput write path**: Go's amortized growth wins if you size capacity correctly
+- **Lock-free concurrency**: Only Rust guarantees no GC pauses under write load
+
+Next: concurrent multi-process contention test.
