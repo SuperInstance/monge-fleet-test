@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-17",
+  "test": "Phase Coherence — novel room quality metric",
+  "description": "Measures whether room oscillation reveals keyword structure via Spearman ranking correlation across 4 phase shifts (0, π/2, π, 3π/2)",
+  "model": "Tiles have 4D keyword vectors. Resolution phase determines which keyword is weighted most heavily. Different phases surface different tile types.",
+  "result": {
+    "structured_room": {
+      "coherence": 0.5316,
+      "interpretation": "High phase-dependence (room has fractal structure)",
+      "phase_pairs": [
+        {"pair": "0 vs π/2", "spearman_rho": -0.5608, "coherence": 0.7804},
+        {"pair": "0 vs π", "spearman_rho": 0.9392, "coherence": 0.0304},
+        {"pair": "0 vs 3π/2", "spearman_rho": -0.6265, "coherence": 0.8133},
+        {"pair": "π/2 vs π", "spearman_rho": -0.5000, "coherence": 0.7500},
+        {"pair": "π/2 vs 3π/2", "spearman_rho": 0.9343, "coherence": 0.0328},
+        {"pair": "π vs 3π/2", "spearman_rho": -0.5657, "coherence": 0.7828}
+      ]
+    }
+  },
+  "key_insight": "Coherence > 0.5 = oscillation reveals structure = room has fractal self-similarity. Coherence < 0.5 = static ranking regardless of phase = room is noise.",
+  "springboard_chain": [
+    "Step 1 (DONE): coherence measures keyword structure via phase-dependent ranking",
+    "Step 2: Run on PLATO rooms — compare coherence to tile resolution rate",
+    "Step 3: Track coherence over room age — does self-organization increase coherence?",
+    "Step 4: Connect to Belyaev: high coherence = diverse keyword dimension span = novel function potential"
+  ],
+  "next_test": "Query PLATO rooms (fleet-coord, flux-engine) for tile keywords, project into 4D space, compute coherence",
+  "production_implication": "Rooms with coherence > 0.5 have fractal phase-dependent structure — they self-organize. Rooms with coherence < 0.5 are static — agents adding tiles creates noise, not structure. This is the QUALITY distinction Casey asked for: not how fast, but whether the room has structure that enables coordination."
+}

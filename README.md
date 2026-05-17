@@ -146,3 +146,43 @@ At 10Hz heartbeat with 1000 tiles/room:
 - Python is 8.6x slower than Go on oscillation workload (vs 6x on deposit) — oscillation amplifies language overhead
 
 Next: mixed-language pipeline test — Go connection handling + Rust compute + Python orchestration.
+
+## Round 4: Phase Coherence — Novel Room Quality Metric
+
+### What it measures
+Whether room oscillation reveals keyword structure. Spearman ranking correlation across 4 phases (0, π/2, π, 3π/2).
+
+| Room | Tiles | Coherence | Interpretation |
+|------|------:|----------:|---------------|
+| Simulated fractal | 1000 | **0.53** | High phase-dependence = room has structure |
+| fleet-coord (real) | 14890 | **0.24** | Partially static — some phase dependence |
+| flux-engine (real) | 8589 | **0.00** | Perfectly static — no phase dependence |
+| oracle1-fm-bridge | 2185 | **0.00** | Perfectly static — no phase dependence |
+
+### Key Novel Finding
+
+**Real PLATO rooms are NOT oscillating.** They're static ordered lists where the same tiles dominate regardless of resolution phase.
+
+This is the OPPOSITE of the AbstractionRoom oscillation design. Real rooms behave like:
+- A sorted list (by tile energy/confidence)
+- NOT an oscillating window (that surfaces different tiles at different phases)
+
+### Springboard Chain
+
+1. **Discovery**: Real rooms have static coherence (~0) vs simulated (~0.53)
+2. **Question**: Is static coherence GOOD (ordered = findable) or BAD (stuck = no novelty)?
+3. **Verification**: Compare coherence to tile "resolution rate" — do high-coherence rooms have better sync outcomes?
+4. **Even deeper**: Does coherence INCREASE over room age (self-organization) or DECREASE (entropy)?
+5. **Connection**: Belyaev claim — do high-coherence rooms (many keyword dimensions) have more novel function development?
+
+### Implication for AbstractionRoom design
+
+The oscillation pattern (surfacing different tiles at different phases) is NOT how real PLATO rooms work. Two interpretations:
+1. **Rooms need oscillation added** — the AbstractionRoom is a NEW design that doesn't exist yet in PLATO
+2. **Rooms have a different quality** — PLATO rooms work through energy-based ordering, not phase-based surfacing
+
+If interpretation 1 is right: building OscillatingAbstractionRoom would be genuinely novel — no existing room does this.
+
+If interpretation 2 is right: the oscillation design might be unnecessary complexity. The existing energy/confidence ordering already surfaces the "right" tiles.
+
+**Verification**: Do rooms with HIGH tile energy/confidence have better fleet coordination outcomes than low-energy rooms? If yes, energy ordering is the right mechanism. If no, oscillation might be needed.

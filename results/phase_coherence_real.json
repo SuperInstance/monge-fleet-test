@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-17",
+  "test": "Phase Coherence — Real PLATO Rooms vs Simulated",
+  "description": "Computed coherence on actual PLATO rooms (fleet-coord, flux-engine, oracle1-forgemaster-bridge) vs simulated fractal room",
+  "results": {
+    "simulated_fractal_room": {
+      "coherence": 0.5316,
+      "description": "4-keyword vector tiles, 1000 tiles, 4 phases"
+    },
+    "fleet-coord": {
+      "tiles_total": 14890,
+      "tiles_analyzed": 800,
+      "coherence": 0.2381,
+      "spearman_pairs": [
+        {"pair": "0 vs π/2", "rho": 0.2856, "coherence": 0.3572},
+        {"pair": "0 vs π", "rho": 1.0000, "coherence": 0.0000},
+        {"pair": "0 vs 3π/2", "rho": 0.2856, "coherence": 0.3572},
+        {"pair": "π/2 vs π", "rho": 0.2856, "coherence": 0.3572},
+        {"pair": "π/2 vs 3π/2", "rho": 1.0000, "coherence": 0.0000},
+        {"pair": "π vs 3π/2", "rho": 0.2856, "coherence": 0.3572}
+      ],
+      "interpretation": "Partially static — some phase-dependence at 90° offsets, but perfect correlation at 180° offsets"
+    },
+    "flux-engine": {
+      "tiles_analyzed": 400,
+      "coherence": 0.0,
+      "note": "rho=1.0 at all phase pairs = perfectly static ranking"
+    },
+    "oracle1-forgemaster-bridge": {
+      "tiles_analyzed": 400,
+      "coherence": 0.0004,
+      "note": "near-zero coherence = ranking doesn't change with phase"
+    }
+  },
+  "novel_discovery": "Real PLATO rooms have STATIC keyword hierarchy (coherence ~0.24) vs simulated fractal rooms (coherence ~0.53). This means actual rooms don't oscillate their keyword structure — the same tiles dominate regardless of phase.",
+  "springboard": [
+    "Question: Is static coherence GOOD or BAD for fleet coordination?",
+    "Hypothesis A: Static coherence = rooms are ORDERED = GOOD for finding information",
+    "Hypothesis B: Static coherence = rooms are STUCK = BAD for surfacing novel connections",
+    "Verification test: Compare room coherence to tile 'resolution rate' — do high-coherence rooms have better agent sync outcomes?",
+    "Even deeper: Does room coherence DECREASE over time (entropy) or INCREASE (self-organization)?",
+    "If coherence correlates with coordination success, it's a QUALITY metric. If not, oscillation is just theater."
+  ],
+  "production_implication": "PLATO rooms with 10K+ tiles are behaving like ordered lists, not oscillating systems. The AbstractionRoom oscillation pattern is NOT how real PLATO rooms work. Either: (1) oscillation needs to be ADDED to rooms, or (2) rooms have a different quality metric than coherence."
+}
